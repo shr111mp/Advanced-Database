@@ -256,7 +256,7 @@ public class AdminInventory extends javax.swing.JFrame {
         Connection myConn = DriverManager.getConnection(url, user, pass);
         Statement myStatement = myConn.createStatement();
         
-        ResultSet result = myStatement.executeQuery("select * from products");
+        ResultSet result = myStatement.executeQuery("select * from books");
         
         while(result.next()){
             String id = result.getString("product_id");
@@ -281,7 +281,7 @@ public class AdminInventory extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Click an item to delete", "Error", HEIGHT);
         }
         else{
-           ResultSet result = myStatement.executeQuery("delete from products where product_id='"+id+"';"); 
+           ResultSet result = myStatement.executeQuery("delete from books where product_id='"+id+"';"); 
            JOptionPane.showMessageDialog(rootPane, "Item Deleted");
             dispose();
             AdminInventory ai = new AdminInventory();

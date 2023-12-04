@@ -7,6 +7,7 @@ package libroloom.Admin;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import libroloom.Login;
 
 /**
  *
@@ -100,8 +101,8 @@ public class AdminHome extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        AdminLogin alog = new AdminLogin();
-        alog.setVisible(true);
+        Login log = new Login();
+        log.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 

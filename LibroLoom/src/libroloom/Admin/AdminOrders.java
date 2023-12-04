@@ -145,7 +145,7 @@ public class AdminOrders extends javax.swing.JFrame {
         Connection myConn = DriverManager.getConnection(url, user, pass);
         Statement myStatement = myConn.createStatement();
         
-        ResultSet result = myStatement.executeQuery("select * from orderhistory");
+        ResultSet result = myStatement.executeQuery("select * from transactions");
         
         while(result.next()){
             String id = result.getString("order_id");

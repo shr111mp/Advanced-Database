@@ -223,7 +223,7 @@ public class InventoryAdd extends javax.swing.JFrame {
         Connection myConn = DriverManager.getConnection(url, user, pass);
             Statement myStatement = myConn.createStatement();
         
-        ResultSet result = myStatement.executeQuery("insert into products(title,genre,author,price) values('"+title+"','"+genre+"','"+author+"','"+price+"')");
+        ResultSet result = myStatement.executeQuery("insert into books(title,genre,author,price) values('"+title+"','"+genre+"','"+author+"','"+price+"')");
         
     }
 

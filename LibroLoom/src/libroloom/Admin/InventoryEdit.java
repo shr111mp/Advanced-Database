@@ -219,7 +219,7 @@ public class InventoryEdit extends javax.swing.JFrame {
         Connection myConn = DriverManager.getConnection(url, user, pass);
         Statement myStatement = myConn.createStatement();
         
-        ResultSet result = myStatement.executeQuery("update products set title='"+a+"', genre='"+b+"', author='"+c+"', price='"+d+"' where product_id='"+id+"'");
+        ResultSet result = myStatement.executeQuery("update books set title='"+a+"', genre='"+b+"', author='"+c+"', price='"+d+"' where product_id='"+id+"'");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
