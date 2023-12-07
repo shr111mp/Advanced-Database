@@ -9,6 +9,8 @@ package libroloom;
  * @author casti
  */
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.*;
 public class Books extends javax.swing.JFrame {
 
@@ -260,6 +262,11 @@ public class Books extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
         Home home = new Home();
+        try {
+            home.showDatalatest();
+        } catch (SQLException ex) {
+            Logger.getLogger(Books.class.getName()).log(Level.SEVERE, null, ex);
+        }
         home.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 

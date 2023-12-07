@@ -10,6 +10,8 @@ package libroloom;
  */
 
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 public class Orders extends javax.swing.JFrame {
 
@@ -43,7 +45,7 @@ public class Orders extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 204));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,6 +73,7 @@ public class Orders extends javax.swing.JFrame {
         }
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Your order history");
 
         jButton1.setText("Back");
@@ -126,6 +129,11 @@ public class Orders extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Home home = new Home();
+        try {
+            home.showDatalatest();
+        } catch (SQLException ex) {
+            Logger.getLogger(Orders.class.getName()).log(Level.SEVERE, null, ex);
+        }
         home.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

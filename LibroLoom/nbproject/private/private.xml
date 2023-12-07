@@ -5,9 +5,15 @@
         <group>
             <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Login.java</file>
             <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Orders.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Admin/AdminHome.java</file>
             <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Books.java</file>
             <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Signup.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Admin/AdminInventory.java</file>
             <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Home.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Account.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/ConfirmationWindow.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Admin/AdminLogin.java</file>
+            <file>file:/C:/Users/casti/OneDrive/Documents/NetBeansProjects/LibroLoom/src/libroloom/Admin/InventoryEdit.java</file>
         </group>
     </open-files>
 </project-private>

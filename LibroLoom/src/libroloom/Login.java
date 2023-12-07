@@ -207,11 +207,8 @@ public class Login extends javax.swing.JFrame {
         String b = jPasswordField1.getText();
         
         
-        
         try {
             checker(a,b);
-            Home home = new Home();
-            home.showData();
         } catch (SQLException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -290,7 +287,7 @@ public class Login extends javax.swing.JFrame {
                 Home home = new Home();
                 
                 home.welcomeMessage(a);
-                
+                home.showDatalatest();
                 home.setVisible(true);
                 dispose();
                 System.out.println("Login Success");
